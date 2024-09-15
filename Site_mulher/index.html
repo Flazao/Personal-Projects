@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Projeto com Html, Css e js</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh !important;
+        margin: 0 !important;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .box {
+        font-size: 20px;
+        color: white;
+        height: 100%;
+        width: 100%;
+        background: rgb(10, 10, 10);
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .buttons-container {
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        width: 150px;
+        padding: 30px;
+      }
+
+      h1 {
+        color: blueviolet;
+      }
+
+      input {
+        border-radius: 5px;
+        box-shadow: 0px 5px 5px 0;
+        padding: 10px;
+        height: 45px;
+        width: 80px;
+        background: white;
+        color: rgb(51, 51, 51);
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      input:hover {
+        background-color: gray;
+        transition: background-color 0.3s ease, background-color 0.3s ease;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <h1>Você é gay??</h1>
+      <div class="buttons-container">
+        <input
+          type="button"
+          value="Sim"
+          onclick="window.location.href='//www.youtube.com/watch?v=Dk0nQPDc0sY';"
+        />
+        <input
+          type="button"
+          id="no"
+          value="Não"
+          onclick="window.location.href='//www.youtube.com/watch?v=Tim5nU3DwIE'"
+        />
+      </div>
+    </div>
+    <script>
+      let input = document.getElementById("no");
+      let height = window.innerHeight - 50;
+      let width = window.innerWidth - 50;
+
+      input.addEventListener("mouseover", function () {
+        input.style.position = "absolute";
+        input.style.top = Math.random() * height + "px";
+        input.style.left = Math.random() * width + "px";
+      });
+    </script>
+  </body>
+</html>
