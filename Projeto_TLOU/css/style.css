@@ -1,0 +1,48 @@
+body{
+    background-color: #d2d2c1;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#principal{
+    width: 930px;
+    text-align: center;
+    margin-left: 31vh;
+    position: absolute;
+}
+#principal #cabecalho img{
+    width: 930px;
+}
+#principal #cabecalho #menu a{
+    color:  #4b566a;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+} 
+
+#principal #cabecalho #menu a:hover{
+    color: #d2d2c1;
+    background: #4b566a;
+}
+#corpo{
+    padding: 10px;
+    background-color: #e8e8d9;
+}
+#corpo #h1{
+    color: #4b566a;
+}
+#corpo img{
+    width: 900px;
+}
+#rodape{
+    text-align: center;
+    background-color: rgb(187, 187, 187);
+    padding: 1px;
+    margin-top: 10px;
+}
+#contato a{
+    text-decoration: none;
+    color: black;
+}
